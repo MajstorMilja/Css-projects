@@ -1,0 +1,28 @@
+.Opis{
+    width: 60vh;
+    height: 55vh;
+        display: flex;
+        justify-content: center; /* Horizontal centering */
+        align-items: center; /* Vertical centering */
+        text-align: center;
+        font-size: 18px;
+}
+.CenterDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.OpisTekst{
+    text-align: justify;
+  text-justify: inter-word;
+}
+.OpissNaslov{
+    padding-top: 25px;
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#oNama .title{
+    margin-top: 200px;
+}

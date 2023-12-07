@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Dimplomski/Css/SingUp.css">
+    <title>SingUp MovieVerse</title>
+</head>
+
+<body>
+    <script>
+        function redirectToHome() {
+            window.location.href = '../Dimplomski/Home.Html';
+        }
+    </script>
+
+    <div class="dugmence">
+       <button onclick="redirectToHome()" class="dugmence">Vrati se</button>
+    </div>
+    <div class="Offers">
+        <section>
+            <div class="table">
+                <div class="table__item">
+                    <h3 class="table__title">Basic</h3>
+                    <p class="table__subtitle">Perfect for individuals</p>
+                    <div class="table__plan">
+                        <span class="table__plan-currency">$</span>
+                        <span class="table__plan-price">9.99</span>
+                        <span class="table__plan-period">/month</span>
+                    </div>
+                    <ul class="table__list">
+                        <li><b>2</b> Users</li>
+                        <li><b>1</b> Month</li>
+                        <li><b>Unlimited</b> Movies</li>
+                        <li><b>10</b> GB Of Storage</li>
+                    </ul>
+                    <input type="checkbox" class="form-check-input hello1" name="" id="Price" value="checkedValue">
+                    <label class="form-check-label" for="">
+                       Basic Box
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="table__item main">
+                    <h3 class="table__title">Premium</h3>
+                    <p class="table__subtitle">Perfect for individuals</p>
+                    <div class="table__plan">
+                        <span class="table__plan-currency">$</span>
+                        <span class="table__plan-price">49.99</span>
+                        <span class="table__plan-period">/6months</span>
+                    </div>
+                    <ul class="table__list">
+                        <li><b>2</b> Users</li>
+                        <li><b>6</b> Month</li>
+                        <li><b>Unlimited</b> Movies</li>
+                        <li><b>50</b> GB Of Storage</li>
+                    </ul>
+                    <input type="checkbox" class="form-check-input hello2" name="" id="Price" value="checkedValue">
+                    <label class="form-check-label" for="">
+                        Premium Box
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="table__item">
+                    <h3 class="table__title">Enterprise</h3>
+                    <p class="table__subtitle">Perfect for Family</p>
+                    <div class="table__plan">
+                        <span class="table__plan-currency">$</span>
+                        <span class="table__plan-price">99.99</span>
+                        <span class="table__plan-period">/12month</span>
+                    </div>
+                    <ul class="table__list">
+                        <li><b>4</b> Users</li>
+                        <li><b>12</b> Month</li>
+                        <li><b>Unlimited</b> Movies</li>
+                        <li><b>100</b> GB Of Storage</li>
+                    </ul>
+                    <input type="checkbox" class="form-check-input hello3" name="" id="Price" value="checkedValue">
+                    <label class="form-check-label" for="">
+                        Enterprise Box
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="row container">
+        <div class="col-md-8">
+            <form class="form-container">
+                <label for="Email">
+                    <input type="email" placeholder="Email" class="input__field">
+                </label>
+                <label for="UserName">
+                    <input type="text" name="" id="" class="input__field" placeholder="UserName">
+                </label>
+                <div class="input">
+                    <input class="input__field" placeholder="Password">
+                    <label for="password"></label>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form class="form-container">
+                <label for="Card">
+                    <input type="text" placeholder="Credit Card Number" class="input__field">
+                </label>
+                <label for="Pin">
+                    <input type="text" name="" id="" placeholder="3 digit number" class="input__field">
+                </label>
+                <a href="#">Terms of service</a>
+                <div class="form-check">
+                    
+                    <label class="form-check-label" for="">
+                        I agree to terms   <span class="checkmark"></span>
+                        <input type="checkbox" style="margin-left: 5px;margin-top: 3px;" class="form-check-input" name="" id="" value="checkedValue">
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="Sacuvaj">
+        <button onclick="redirectToHome()" class="Sacuvaj">Sacuvaj</button>
+     </div>
+</body>
+
+</html>

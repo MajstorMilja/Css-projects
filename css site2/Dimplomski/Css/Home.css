@@ -1,0 +1,429 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #1e293b;
+  overflow-x: hidden;
+  /* Keep horizontal overflow visible */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+
+
+.app {
+  background-color: #220c4d;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.app h1 {
+  color: #6cbee2;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+
+header p,
+p {
+  color: #6cbee2;
+}
+
+.tag-list {
+  width: 100%;
+  position: relative;
+  padding: 1.5rem 0;
+  overflow: hidden;
+}
+
+.column:nth-child(even) {
+  animation-direction: reverse;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  animation: moveColumnsTogether 10s infinite linear;
+  opacity: 0;
+}
+
+.column:nth-child(2),
+.column:nth-child(4) {
+  animation: moveColumnsTogether 10s infinite linear;
+}
+
+.column:nth-child(1),
+.column:nth-child(3),
+.column:nth-child(5) {
+  animation: moveColumnsTogether 10s infinite linear;
+}
+
+@keyframes moveColumnsTogether {
+  0% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 0.2;
+  }
+
+  32% {
+    transform: translateX(100%);
+    opacity: 0.5;
+  }
+
+  36% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-80%);
+    opacity: 0;
+  }
+}
+
+.tag {
+  display: inline-block;
+  background-color: #334155;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2), 0 0.1rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.2rem 1.5rem rgba(0, 0, 0, 0.4);
+}
+
+.fade {
+  pointer-events: none;
+  background: linear-gradient(90deg, #1e293b, transparent 30%, transparent 70%, #1e293b);
+  position: absolute;
+  inset: 0;
+  animation: fadeInOut 10s infinite linear;
+}
+
+/* Additional Styles */
+
+
+.Titles {
+  color: black;
+  background-color: #eaf7f7;
+}
+
+.DescriptionMovies {
+  color: black;
+  background-color: #220c4d;
+  height: 600px;
+}
+
+
+
+.NavBarItems {
+  justify-content: end;
+}
+
+/* Navbar Styles */
+
+.navbar {
+  background: rgb(6, 0, 102);
+  background: linear-gradient(90deg, rgba(6, 0, 102, 1) 0%, rgba(0, 28, 41, 1) 37%, rgba(0, 99, 122, 1) 79%, rgba(0, 135, 162, 1) 99%);
+}
+
+
+.nav-link {
+  color: #d4d4d4;
+}
+
+.nav-link:hover {
+  color: #FF10F0;
+  transform: translateY(-0.15em);
+  /* text-shadow:0px 0px 30px #ff16c5;
+    z-index: 1; */
+  text-shadow: 0px 0px 30px #fdec6e;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.NameEnd {
+
+
+  left: 45%
+}
+
+.Logo {
+  color: blue;
+}
+
+.demo-content {
+  display: grid;
+  text-align: center;
+  height: 100vh;
+  font-size: 15px;
+  background-color: #250f4d;
+}
+
+.FanFavSection {
+  display: grid;
+  text-align: center;
+  height: 100vh;
+  font-size: 15px;
+  background-color: #250f4d;
+  color: white;
+}
+
+.FanFavSection h3 {
+  padding-top: 35px;
+  color: #e0dfdc;
+  letter-spacing: .1em;
+  text-shadow:
+    0 -1px 0 #fff,
+    0 9px 0 #1e1e1e,
+    0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+.footerSection {
+  background-color: #28282B;
+  height: min-content;
+  text-align: center;
+}
+
+.FanFavSection h3:hover {
+  transform: scale(1.1);
+}
+
+.genreSection {
+  display: grid;
+  text-align: center;
+  height: 120vh;
+  font-size: 50px;
+  background-color: #220c4d;
+}
+
+.favMovies {
+  height: 400px;
+  width: 130px;
+}
+
+.textDesc {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hrtag {
+  background-color: #FF10F0;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  left: 980px;
+  top: 160px;
+  transform: rotate(35deg);
+  width: 700px;
+}
+.buttomHr{
+  background-color: #FF10F0;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+bottom: 200px;
+right: 100px;
+  transform: rotate(215deg);
+  width: 700px;
+}
+.Genre {
+  height: 400px;
+  width: 250px;
+}
+
+.ListOfFooterTags {
+  color: white;
+  list-style: none;
+}
+
+.dc--0 {
+  place-items: center;
+}
+
+.dc--1,
+.dc--3 {
+  background-color: #17181a;
+}
+
+.carousel-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+
+}
+
+.DescritpionSection {
+  background-color: #220c4d;
+}
+
+.linkListGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-caption {
+  margin-top: 10px;
+}
+
+.matcard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.matcard-item img {
+  max-width: 100%;
+  max-height: 160px;
+}
+
+.matcard-item {
+  width: 100%;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  cursor: pointer;
+  padding-top: 35px;
+
+}
+
+.matcard-item:hover {
+  border-color: #FF10F0;
+}
+
+.matcard-item .description {
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.matcard-item .star {
+  margin-top: 5px;
+  font-size: 12px;
+  color: gold;
+}
+
+/* Header end */
+
+/* Slider styles */
+
+.carousel-caption {
+  position: absolute;
+  top: 80%;
+  font-size: large;
+  text-align: center;
+  transition: opacity 1.5s;
+}
+
+.carousel-caption h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Titles {
+  color: black;
+  background-color: #eaf7f7;
+}
+
+
+
+.carouselFull .carousel-inner {
+  border-radius: 20px;
+}
+
+/* Slider styles end */
+
+/* Fade animation */
+
+.fade {
+  pointer-events: none;
+  background: linear-gradient(90deg, #1e293b, transparent 30%, transparent 70%, #1e293b);
+  position: absolute;
+  inset: 0;
+  animation: fadeInOut 10s infinite linear;
+}
+
+@keyframes moveColumnsTogether {
+  0% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 0.2;
+  }
+
+  32% {
+    transform: translateX(100%);
+    opacity: 0.5;
+  }
+
+  36% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-80%);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Fade animation end */
